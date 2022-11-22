@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container-nav {
+    height: 100vh;
+    width: 100%;
+    background-image: url(jpg.png);
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo {
+    color: grey;
+    font-size: 28px;
+}
+span{
+    color: red;
+}
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(208, 48, 208);
+    transition: 1s;
+}
+.btn {
+    background-color: darkorchid;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 12px 30px;
+}
+.btn:hover {
+    background-color: gold;
+    transition: 2s;
+}
+
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #161623;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card {
+    position: relative;
+    width: 280px;
+    height: 300px;
+    margin: 30px;
+    left: 250px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+    transform: translate(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .card .content h2 {
+    color: bisque;
+    font-size: 1.8em;
+    z-index: 1;
+}
+
+.container .card .content p {
+    font-size: 1em;
+    color: darkgray;
+    font-weight: 600;
+}
+
+.container .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: whitesmoke;
+    color: gray;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.container .card:hover .content {
+    transform: translateX(0px);
+    opacity: 1;
+}
